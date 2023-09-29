@@ -1,0 +1,31 @@
+.search-bar{
+    border:3px solid lightgray;
+    border-radius:5px;
+    padding:10px;
+    margin-top: 8.5rem;
+    margin-right: 30rem;
+    margin-left: 29rem;
+}
+
+.search-bar form{
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    font-size:20px;
+    border: 1.8px solid lightgray;
+    border-radius: 3px;
+    background-color: transparent;
+    color:  lightgray;
+}
+
+label{
+    text-align:center;
+    font-size:30px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+    padding-bottom:16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: hsla(189, 43%, 25%, 0.952);
+}
