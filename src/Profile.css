@@ -1,60 +1,80 @@
-/* ProfileCard.css */
 
-/* Estilo para el componente ProfileCard en estado normal */
-.ProfileCard {
-  display: flex;
-  margin-top: 9.5rem;
-   
-  position: relative; /* Asegura que los elementos internos se coloquen relativos a este div */
-  width: 55%;
-  height: 50%; /* O ajusta la altura según tus necesidades */
-  transition: background-image 0.3s ease-in-out; /* Transición suave para el cambio de imagen de fondo */
-  opacity: 0.7;
-  z-index: 2;
-}
+/* .ProfileCard .card:hover{ */
+/*   */
+/*   bottom: 0; */
+/*  */
+/*    */
+/* } */
 
 
-.ProfileCard:hover{
-  opacity: 1;
+
+.card{
   
+  
+ 
+ 
+ width: 17%;
+ 
+  padding: 1rem;
+  border: 4px solid #cc2e2e;
+  opacity: 0.3;
 }
+
+.card:hover{
+  
+  opacity: 1;
+}
+/* .ProfileCard:hover .card:not(:hover) { */
+/*  */
+/*   opacity: 0.6; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/* } */
+
+
 
 .card-content {
   display: none;
 }
+.card:hover .card-content {
+  display: block;
+ 
+}
 
 
-/* Estilo para el fondo overlay en estado normal (sin hover) */
+/* Estilo para el fondo overlay en estado normal (sin hover)
 .ProfileCard:before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad del overlay */
-  z-index: -1; /* Coloca el overlay sobre otros elementos */
-  transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color del overlay */
+  position: relative;
+  
+  
+  
+  background-color: rgba(0, 0, 0, 0.7); /* Color y opacidad del overlay 
+   z-index: -1;  /* Coloca el overlay sobre otros elementos 
+  transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color del overlay 
 }
 
+*/
 
-.ProfileCard:hover .card-content {
-  display: block;
-}
 
-/* Estilo para el fondo overlay en estado hover (con hover) */
+
+
+
+/* Estilo para el fondo overlay en estado hover (con hover) 
 .ProfileCard:hover:before {
   
+  
  
- 
- 
+
     
-  background-color: rgba(0, 0, 0, 0); /* Color y opacidad del overlay cuando se pasa el mouse */
+  background-color: rgba(0, 0, 0, 1); /* Color y opacidad del overlay cuando se pasa el mouse 
   
   
   
 }
 
+
+*/
 
 
 

@@ -1,4 +1,10 @@
+/* import React,{useState} from 'react' */
 import Logo from './logoblur.png'
+import CartIcon from './CartWidget.js' 
+/* import onAdd from './ItemCount' */
+/*  */
+/* import ItemCount from './ItemCount' */
+
 /* import Fondo from './img/casa-verde.webp'; */
 const Hero=()=>{
 
@@ -13,6 +19,7 @@ const Hero=()=>{
               <div className="hero-header">
                 <a href='https://ni7co7.github.io/JSGIANFELICIentregaFinal/img/casa3.jpg' class="navbar-item">
                   <img className="hero-logo" src={Logo} alt="Logo"/>
+                 
                 </a>
                 <span class="navbar-burger" data-target="navbarMenuHeroA">
                   <span></span>
@@ -37,11 +44,19 @@ const Hero=()=>{
                   <span class="navbar-item">
                     <a class="button is-primary is-inverted">
                       <span class="icon">
-                        <i class="fab fa-github"></i>
+
+                        <CartIcon />
+                     
+                       
                       </span>
-                      <span>Contact</span>
+                      <span  >
+                        <p> | q</p>
+                         
+                        
+                      </span>
                     </a>
                   </span>
+                  
                 </div>
               </div>
             </div>
