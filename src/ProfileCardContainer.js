@@ -1,4 +1,5 @@
 import "./ProfileCardContainer.css";
+import "./Profile.css";
 import ProfileCard from "./ProfileCard";
 import { useState } from "react";
 
@@ -9,7 +10,7 @@ import SingleImg from './img/casa3.jpg';
 
 
 const ProfileCardContainer = () => {
-           const [backgroundImage, setBackgroundImage] = useState(Fondo);
+           const [backgroundImage, setBackgroundImage] = useState();
            const [hoveredCard, setHoveredCard] = useState(null);
        // Función para cambiar el fondo overlay al pasar el mouse sobre un ProfileCard
            function handleOverlayChange(newBackgroundImage) {
@@ -18,7 +19,7 @@ const ProfileCardContainer = () => {
        // Función para manejar el mouseLeave y volver al fondo predeterminado
        function handleMouseLeave() {
          if (hoveredCard !== null) {
-           setBackgroundImage(Fondo);
+           setBackgroundImage();
            setHoveredCard(null);
          }
        }
@@ -27,10 +28,10 @@ const ProfileCardContainer = () => {
 
         <div className="ProfileCardContainer"  style={{ backgroundImage: `url(${backgroundImage})` }}>
             
-            <div   onMouseLeave={handleMouseLeave}>
+            <div onMouseEnter={handleOverlayChange}  >
+                <section  onMouseLeave={handleMouseLeave}  className='columns' >
                   
-                <section /* className='columns' */>
-                   <div /* className='column is-4' */>
+                   <div  className='column is-4' >
                       <ProfileCard
                         titulo="Duplex"
                         arroba="elchavo@hotmail.com"
@@ -41,7 +42,7 @@ const ProfileCardContainer = () => {
                         }}
                       />
                    </div>
-                   <div /* className='column is-4' */>
+                   <div  className='column is-4' >
                        <ProfileCard
                          titulo="Triplex"
                          arroba="elchavo@hotmail.com"
@@ -52,7 +53,7 @@ const ProfileCardContainer = () => {
                          }}
                        />
                    </div>
-                   <div /* className='column is-4' */>
+                   <div  className='column is-4' >
                         <ProfileCard
                           titulo="Single"
                           arroba="donrramon@hotmail.com"

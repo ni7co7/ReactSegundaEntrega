@@ -1,6 +1,9 @@
 /* import React,{useState} from 'react' */
-import Logo from './logoblur.png'
-import CartIcon from './CartWidget.js' 
+
+import LogoImg from './logoblur.png'
+
+
+/* import CartIcon from './CartWidget.js'  */
 /* import onAdd from './ItemCount' */
 /*  */
 /* import ItemCount from './ItemCount' */
@@ -17,8 +20,9 @@ const Hero=()=>{
           <nav class="navbar">
             <div class="container">
               <div className="hero-header">
+                
                 <a href='https://ni7co7.github.io/JSGIANFELICIentregaFinal/img/casa3.jpg' class="navbar-item">
-                  <img className="hero-logo" src={Logo} alt="Logo"/>
+                  <img className="hero-logo" src={LogoImg} alt="Logo"/>
                  
                 </a>
                 <span class="navbar-burger" data-target="navbarMenuHeroA">
@@ -45,7 +49,7 @@ const Hero=()=>{
                     <a class="button is-primary is-inverted">
                       <span class="icon">
 
-                        <CartIcon />
+                      {/*   <CartIcon /> */}
                      
                        
                       </span>
@@ -74,26 +78,7 @@ const Hero=()=>{
             </p>
           </div>
         </div>
-
-        {/* <div className='container' > */}
-        {/*     <section className='section' > */}
-        {/*       <div className='columns'> */}
-        {/*            <div className='column is-4' > */}
-        {/*             <p>ESte es el  1</p> */}
-        {/*            </div> */}
-        {/*            <div className='column is-4' > */}
-        {/*            <p>ESte es el 2</p> */}
-
-        {/*            </div> */}
-
-        {/*            <div className='column is-4' > */}
-        {/*            <p>ESte es el 4</p> */}
-        {/*            </div> */}
-        {/*       </div> */}
-        {/*     </section> */}
-        {/* </div> */}
-      
-      
+                                        
         <div class="hero-foot">
           <nav class="tabs">
             <div class="container">

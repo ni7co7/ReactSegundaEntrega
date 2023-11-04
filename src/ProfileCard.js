@@ -40,15 +40,16 @@ export default ProfileCard;
 
 
 import './Profile.css'
-/* import { useState } from 'react'; */
+ import { useState } from 'react'; */
 import './casa-verde.webp'
-import './Profile.css'  
+/* import './Profile.css'   */
+
 /*  */
 function ProfileCard({ titulo, arroba, img, onHover }) {
   return (
-    <div  className="ProfileCard" >
-      <section className={`section`} /* style={{ backgroundImage: `url(${img})` }} */>
-        <div className="card" onMouseEnter={onHover}>
+    <div  className="ProfileCard"  onMouseEnter={onHover}>
+      <section className={`section`} /*  style={{ backgroundImage: `url(${img})` }} */ >
+        <div className="card">
           <div className="card-img">
             <figure>
               <img src={img} alt="Duple" className="image is 1by1" />

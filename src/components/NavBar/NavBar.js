@@ -1,5 +1,5 @@
-import CartWidget from "../CartWidget/CartWidget";
-import logoEcommerce from "./assets/logoEcommerce.png";
+/* import CartWidget from "../CartWidget/CartWidget"; */
+/* import logoEcommerce from "./assets/logoEcommerce.png"; */
 import "./style.css";
 import { NavLink, Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function NavBar (){
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
             <Link to="/">
-                <h3>Neo Ecommerce</h3>
+                <h3>HHHHHHHHHHHhhhhhhhhhhhh</h3>
             </Link>
             
             <div className="navbar-menu">
@@ -25,13 +25,9 @@ function NavBar (){
                     <div className="column">
                         <NavLink to={`/category/joyeria`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Joyeria</NavLink>
                     </div>
-                </div>
-                
-                
-                
-                
+                </div>    
             </div>
-            <CartWidget/>
+            {/* <CartWidget/> */}
             </div>
             
             
